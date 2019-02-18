@@ -1,0 +1,118 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+    font-family: lato;
+    src: url('/../../fonts/Lato-Light.woff') format("opentype");
+}
+@font-face {
+    font-family: lato-bold;
+    src: url('/../../fonts/Lato-Bold.woff') format("opentype");
+}
+@font-face {
+    font-family: exo;
+    src: url("../../fonts/Exo2-LightExpanded.otf") format('opentype');
+}
+@font-face {
+    font-family: exo-thin;
+    src: url("../../fonts/Exo2-ThinExpanded.otf") format('opentype');
+}
+@font-face {
+    font-family: exo-bold;
+    src: url("../../fonts/Exo2-BoldExpanded.otf") format('opentype');
+}
+img {
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.user-img {
+    -webkit-transition:none;
+    transition:none;
+    -webkit-transform: none;
+    transform: none;
+
+}
+.input-icon-wrap {
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+}
+
+.input-icon {
+    background: #ddd;
+}
+
+.input-with-icon {
+    border: none;
+    flex: 1;
+}
+
+.input-icon, .input-with-icon {
+    padding: 10px;
+}
+.users {
+    border: solid 1px ;
+    width: 80%;
+    padding: 50px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.details {
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: x-large;
+}
+.scroller {
+    width: 250px;
+    max-height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+.username {
+    font-family: exo-bold, sans-serif;
+    text-transform: capitalize;
+}
+.username > span {
+    font-family: lato-bold, sans-serif;
+}
+.user-list {
+    max-height: 500px;
+    overflow: auto;
+    width: 305px;
+}
+.user-list.scroller {
+    max-height: 630px;
+}
+.get-imgs {
+    background: transparent;
+    border: transparent;
+}
+.displayed-images {
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.images {
+    margin-top: 100px;
+
+}
+.images-note {
+    text-align: center;
+    font-family: lato-bold, sans-serif;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.user-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
